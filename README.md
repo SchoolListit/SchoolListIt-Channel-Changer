@@ -46,6 +46,8 @@ TODO: everything. I've created this very minimal approach to building plugins wi
 
 TODO: I've got older plugins I've built for marketing which have all the twilio integrations, but we need to carefully consider how to best use this tech without overwhelming teachers. My gut tells me that the plugin needs to be very opinioonated with few options and no administration. Teachers dont have time to mess with it...they just need to save time.
 
+OPPORTUNITY: There is an opportunity for an ecosystem company to get involved here providing the 'setup' service for teachers and schools...establishing social accounts, reading analytics, providing feedback, creating automation and trigger campaigns for teachers. 
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
