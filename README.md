@@ -1,20 +1,29 @@
-# Foobar
+# SchoolListIt Channel Changer
 
+## Streamlining parent teacher communication
 SchoolListIt Channel Changer streamlines teacher - parent communication and enables tracking and analytics for those communications. This feature aims to leverage the learnings gained through marketing and marketing automation and put that knowledge to work streamlining and automating parent - teacher communication. 
 
 Using the right technology, we can do a better job ensuring that the message a teacher sends is not only received, but received and understood by parents. This technology has been around in marketing for a while and is quite mature - teachers just have no idea that it exists. They are gonna love this!
 
-is a WordPress plugin which facilitates using the SchoolListIt Application channel changers. It is through this plugin that SchoolListIt is able to send broadcast and individual messages from teacher (or school) to a student's network of adults and specifically tailor those communications to leave the teachers preferred channel and arrive in the Parent's preffered channel.
+## How it works
+Through this plugin, SchoolListIt is able to send broadcast and individual messages from teacher (or school) to their network of followers and tailor those communications to leave the teachers preferred channel and arrive in the Parent's preffered channel.
 
 We know that parents are splintered onto many different channels, and teachers have trouble communicating in so many different ways. But, parents are busy and also monitoring many channels. The channel changer facilitates parental involvement by meeting parents where they are and streamlining that for the school administration and teachers. 
 
-On plugin activation, a notification is sent to the SchoolListit app asking each connected user to choose thier preferred channel. From there, this plugin acts as a channel changer changing the originating channel to the destination channel via Twilio's PHP SDK. Establishing a 'classroom' set of numbers and contact information liberates the teachers personal cell phones, social profiles, and emails from parent communications and enables the school and teacher to better keep track communications between parent and teacher as these are naturally stored in twilio's history and analytics. 
+- teachers can stay in thier prefferred format
+- parents never miss important messages because they were sent on a channel not regularly monitored
+- all communications can be tracked
+- analytics to provide feedback on the effectiveness of parent - teacher communication
+- teachers have access to communication automation and broadcasting tools
 
-## Installation
+# Installation
 
 Download zip file
 Open your wordpress dashboard - the wp-admin page on most sites - and click upload.
 Install and Activate.
+
+## Activation
+On plugin activation, a notification is sent to the SchoolListit app asking each connected user to choose thier preferred channel. From there, this plugin acts as a channel changer changing the originating channel to the destination channel via Twilio's PHP SDK. Establishing a 'classroom' set of numbers and contact information liberates the teachers personal cell phones, social profiles, and emails from parent communications and enables the school and teacher to better keep track communications between parent and teacher as these are naturally stored in twilio's history and analytics. 
 
 ### Settings
 go through the setup and complete all settings required within the admin dashboard. This includes providing access to social accounts, etc needed for twilio to send messages on your behalf. 
