@@ -42,6 +42,10 @@ NOTE: Any channel that you enable must have a 'classroom' profile. For example, 
 NOTE: You may need your server admin team to get involved. This plugin requires the Twilio SDK via composer to work. Sometimes certain hosts have blocked permissions for this setup automatically.
 
 ## Contributing
+TODO: everything. I've created this very minimal approach to building plugins wihtout so much boilerplate abstraction. So, we are set up to build this, but it is not built. 
+
+TODO: I've got older plugins I've built for marketing which have all the twilio integrations, but we need to carefully consider how to best use this tech without overwhelming teachers. My gut tells me that the plugin needs to be very opinioonated with few options and no administration. Teachers dont have time to mess with it...they just need to save time.
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
