@@ -34,7 +34,13 @@ namespace SchoolListIt_Channel_Changer;
    /**
   * Include plugin files
   */
- require_once plugin_dir_path( __FILE__ ) . 'activate.php';
- require_once plugin_dir_path( __FILE__ ) . 'admin-settings.php';
+
  require_once plugin_dir_path( __FILE__ ) . 'channel-changer.php';
+ require_once plugin_dir_path( __FILE__ ) . 'class-classroom.php';
+ $vendor_path = str_replace('public_html', '', $_SERVER['DOCUMENT_ROOT']); 
+ require_once $vendor_path.'vendor/autoload.php';
+ require_once plugin_dir_path( __FILE__ ) . 'class-twilio.php';
  require_once plugin_dir_path( __FILE__ ) . 'endpoints.php';
+
+//echo '<pre>'; var_dump($_SERVER['DOCUMENT_ROOT']); echo '</pre>';
+//echo '<pre>'; var_dump($_SERVER['DOCUMENT_ROOT']); echo '</pre>';
