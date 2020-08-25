@@ -5,6 +5,11 @@ SchoolListIt Channel Changer streamlines teacher - parent communication and enab
 
 Using the right technology, we can do a better job ensuring that the message a teacher sends is not only received, but received and understood by parents. This technology has been around in marketing for a while and is quite mature - teachers just have no idea that it exists. 
 
+NOTE: at this point this app is only designed to work for two pilot use cases and not scalable or complete. We are in testing mode.
+- it is functioning mostly as a bulk text registration and forwarding system
+- teacher texts class, forwards to all parents and students who are registered and approved for the group
+- parent texts class, forwards to the teacher number
+
 **Teachers and parents are gonna love this!**
 
 ## How it works
