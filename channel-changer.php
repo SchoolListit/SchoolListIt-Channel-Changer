@@ -39,8 +39,12 @@ use \DateTime;
 add_shortcode('kickoff_class', __NAMESPACE__.'\\kickoff_class');
 
 function kickoff_class($atts){
-  
+  //$body = "Welcome to Kidz Korner kindergarten and first grade DLI! Our classroom has a phone number to help us communicate better with each other (252-618-0799). We will primarily communicate class news through text message. ";
+  $body = "Please reply 'add me' to this message to get updates.  Miss Siovhan";
 
+
+  $tos = array("+1434-249-6029", "+12525657200", "+12529960016", "+12529960583", "+12523055391", "+12523054137", "+12524230161", "+12522044627", "+12529873035", "+18282341762", "+14048496811", "+12524898193", "+12523054280", "+12523051671", "+12523053251");
+  //$message = new Bulk_Message("+12526180799",$tos,$body, '');
 }
 
 function voice_teacher_to_all(\WP_REST_Request $request){
@@ -93,11 +97,14 @@ function is_new_contact(\WP_REST_Request $request){
   $class_id = get_class_id($params['class']);
   if($class_id){
     $classroom_contacts = new Classroom_Contacts($class_id);
-    $response_data['classroom'] = $classroom_contacts;
     $new = !in_array($params['from'], $classroom_contacts->phone_numbers);
-    $new = ($new) ? 'true' : 'false';
+    if($new){
+      $response_message = 'true';
+    } else {
+      $response_message = get_contact($class_id, $params['from'] );
+    }
     //set up the http response
-    $response = new \WP_REST_RESPONSE($new);
+    $response = new \WP_REST_RESPONSE($response_message);
     $response->set_status( 200 );
     return $response;
   } else {
@@ -142,6 +149,12 @@ function message_teacher_to_all(\WP_REST_Request $request){
     
 }
 
+
+
+/***
+ * Helper functions here for the c=main functional classes
+ */
+
 /**
  * get class id so that we can instantiate the class.
  */
@@ -154,5 +167,18 @@ function get_class_id($class_code){
     return false;
   } 
 }
+
+/**
+ * get class id so that we can instantiate the class.
+ */
+function get_contact($class_id, $phone_number ){
+  global $wpdb;
+  $qry = "SELECT * FROM wp_sli_cc_numbers where class_id='".$class_id."' and phone='".$phone_number."'";
+  $contact = $wpdb->get_row($qry);
+  return $contact; 
+}
+
+
+
 
 ?>

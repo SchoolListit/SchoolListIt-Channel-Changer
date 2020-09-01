@@ -77,11 +77,7 @@ class Classroom {
       $this->phone_numbers = $phone_numbers;
     }
   
-    public function message_class($message){
-      //instantiate twilio
-      //set up message
-      //send message
-    }
+    
     
   }
 
