@@ -15,8 +15,8 @@ class Bulk_Message {
         $this->recipients = $recipients;
         
         // Create REST API Client
-        $sid = 'AC0da01f03a2215425abb66d8b107993ad';
-        $token = '7b7b62ab0e55d2055c910a3b068c2e85';
+        $sid = 'Axx';
+        $token = '7xx';
         $client = new Client($sid, $token);
         
         if($client){
